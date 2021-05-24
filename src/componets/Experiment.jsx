@@ -22,11 +22,11 @@ class Experiment extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{ color: this.state.myColor }}>
         <h3>My color: {this.state.myColor}</h3>
         <h3>My number: {this.state.marginNumber}</h3>
         <input
-          type="text"
+          type="color"
           value={this.state.myColor}
           name="myColor"
           onChange={this.changeText}
