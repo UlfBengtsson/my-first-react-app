@@ -8,6 +8,10 @@ class Experiment extends Component {
 
   changeText = (event) => {
     const { name, value } = event.target;
+
+    //const value = event.target.value;
+    //const name = event.target.name;
+
     this.setState({
       [name]: value,
     });
@@ -35,7 +39,7 @@ class Experiment extends Component {
           type="number"
           value={this.state.marginNumber}
           name="marginNumber"
-          onChange={this.changeNumber}
+          onChange={this.changeText}
         />
       </div>
     );
